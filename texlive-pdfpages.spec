@@ -1,3 +1,9 @@
+# revision 23319
+# category Package
+# catalog-ctan /macros/latex/contrib/pdfpages
+# catalog-date 2011-08-01 09:39:18 +0200
+# catalog-license lppl
+# catalog-version 0.4p
 Name:		texlive-pdfpages
 Version:	0.4p
 Release:	1
@@ -61,6 +67,7 @@ in addition to PDF files.
 %doc %{_texmfdistdir}/source/latex/pdfpages/README
 %doc %{_texmfdistdir}/source/latex/pdfpages/pdfpages.dtx
 %doc %{_texmfdistdir}/source/latex/pdfpages/pdfpages.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -71,3 +78,5 @@ in addition to PDF files.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
