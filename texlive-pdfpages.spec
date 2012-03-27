@@ -1,12 +1,12 @@
-# revision 23319
+# revision 25688
 # category Package
 # catalog-ctan /macros/latex/contrib/pdfpages
-# catalog-date 2011-08-01 09:39:18 +0200
+# catalog-date 2012-03-18 15:01:25 +0100
 # catalog-license lppl
-# catalog-version 0.4p
+# catalog-version 0.4r
 Name:		texlive-pdfpages
-Version:	0.4p
-Release:	2
+Version:	0.4r
+Release:	1
 Summary:	Include PDF documents in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pdfpages
