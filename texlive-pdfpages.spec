@@ -1,11 +1,11 @@
-# revision 25883
+# revision 27574
 # category Package
 # catalog-ctan /macros/latex/contrib/pdfpages
-# catalog-date 2012-04-08 13:49:02 +0200
+# catalog-date 2012-08-31 19:14:38 +0200
 # catalog-license lppl
-# catalog-version 0.4s
+# catalog-version 0.4t
 Name:		texlive-pdfpages
-Version:	0.4s
+Version:	0.4t
 Release:	1
 Summary:	Include PDF documents in LaTeX
 Group:		Publishing
