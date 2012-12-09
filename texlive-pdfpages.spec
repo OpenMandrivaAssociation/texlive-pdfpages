@@ -1,11 +1,11 @@
-# revision 27574
+# revision 25883
 # category Package
 # catalog-ctan /macros/latex/contrib/pdfpages
-# catalog-date 2012-08-31 19:14:38 +0200
+# catalog-date 2012-04-08 13:49:02 +0200
 # catalog-license lppl
-# catalog-version 0.4t
+# catalog-version 0.4s
 Name:		texlive-pdfpages
-Version:	0.4t
+Version:	0.4s
 Release:	1
 Summary:	Include PDF documents in LaTeX
 Group:		Publishing
@@ -67,3 +67,25 @@ in addition to PDF files.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4s-1
++ Revision: 790733
+- Update to latest release.
+
+* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4r-1
++ Revision: 787729
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4p-2
++ Revision: 754763
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.4p-1
++ Revision: 719221
+- texlive-pdfpages
+- texlive-pdfpages
+- texlive-pdfpages
+- texlive-pdfpages
+
