@@ -6,7 +6,7 @@
 # catalog-version 0.4v
 Name:		texlive-pdfpages
 Version:	0.4v
-Release:	5
+Release:	6
 Summary:	Include PDF documents in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pdfpages
