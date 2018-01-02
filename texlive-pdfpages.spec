@@ -1,12 +1,6 @@
-# revision 31518
-# category Package
-# catalog-ctan /macros/latex/contrib/pdfpages
-# catalog-date 2013-08-25 17:45:16 +0200
-# catalog-license lppl
-# catalog-version 0.4v
 Name:		texlive-pdfpages
-Version:	0.4v
-Release:	9
+Version:	0.5l
+Release:	1
 Summary:	Include PDF documents in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pdfpages
@@ -40,23 +34,10 @@ in addition to PDF files.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/pdfpages/pdfpages.sty
-%{_texmfdistdir}/tex/latex/pdfpages/ppdvipdfm.def
-%{_texmfdistdir}/tex/latex/pdfpages/ppdvips.def
-%{_texmfdistdir}/tex/latex/pdfpages/ppnull.def
-%{_texmfdistdir}/tex/latex/pdfpages/pppdftex.def
-%{_texmfdistdir}/tex/latex/pdfpages/ppvtex.def
-%{_texmfdistdir}/tex/latex/pdfpages/ppxetex.def
-%doc %{_texmfdistdir}/doc/latex/pdfpages/dummy-l.pdf
-%doc %{_texmfdistdir}/doc/latex/pdfpages/dummy.pdf
-%doc %{_texmfdistdir}/doc/latex/pdfpages/pdf-ex.tex
-%doc %{_texmfdistdir}/doc/latex/pdfpages/pdf-hyp.tex
-%doc %{_texmfdistdir}/doc/latex/pdfpages/pdf-toc.tex
-%doc %{_texmfdistdir}/doc/latex/pdfpages/pdfpages.pdf
+%{_texmfdistdir}/tex/latex/pdfpages
+%doc %{_texmfdistdir}/doc/latex/pdfpages
 #- source
-%doc %{_texmfdistdir}/source/latex/pdfpages/README
-%doc %{_texmfdistdir}/source/latex/pdfpages/pdfpages.dtx
-%doc %{_texmfdistdir}/source/latex/pdfpages/pdfpages.ins
+%doc %{_texmfdistdir}/source/latex/pdfpages
 
 #-----------------------------------------------------------------------
 %prep
