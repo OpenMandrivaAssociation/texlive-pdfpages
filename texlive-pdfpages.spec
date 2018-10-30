@@ -1,6 +1,6 @@
 Name:		texlive-pdfpages
 Version:	0.5l
-Release:	1
+Release:	2
 Summary:	Include PDF documents in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pdfpages
