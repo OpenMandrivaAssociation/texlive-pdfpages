@@ -3,7 +3,7 @@ Version:	72174
 Release:	1
 Summary:	Include PDF documents in LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pdfpages
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/pdfpages
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdfpages.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdfpages.doc.r%{version}.tar.xz
