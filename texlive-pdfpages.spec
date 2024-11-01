@@ -1,5 +1,5 @@
 Name:		texlive-pdfpages
-Version:	72174
+Version:	72691
 Release:	1
 Summary:	Include PDF documents in LaTeX
 Group:		Publishing
