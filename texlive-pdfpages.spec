@@ -1,51 +1,32 @@
-Name:		texlive-pdfpages
-Version:	72691
-Release:	1
+%global tl_name pdfpages
+%global tl_revision 78558
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	0.6h
+Release:	%{tl_revision}.1
 Summary:	Include PDF documents in LaTeX
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/pdfpages
-License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdfpages.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdfpages.doc.r%{version}.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdfpages.source.r%{version}.tar.xz
+License:	lppl1.3c
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/pdfpages.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/pdfpages.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/pdfpages.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
-Requires:	texlive-eso-pic
+BuildSystem:	texlive
+Requires:	texlive(eso-pic)
+Requires:	texlive(graphics)
+Requires:	texlive(oberdiek)
+Requires:	texlive(pdflscape)
+Requires:	texlive(tools)
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-This package simplifies the inclusion of external multi-page
-PDF documents in LaTeX documents. Pages may be freely selected
-and similar to psnup it is possible to put several logical
-pages onto each sheet of paper. Furthermore a lot of hypertext
-features like hyperlinks and article threads are provided. The
-package supports pdfTeX (pdflatex) and VTeX. With VTeX it is
-even possible to use this package to insert PostScript files,
-in addition to PDF files.
+This package simplifies the inclusion of external multi-page PDF
+documents in LaTeX documents. Pages may be freely selected and similar
+to psnup it is possible to put several logical pages onto each sheet of
+paper. Furthermore a lot of hypertext features like hyperlinks and
+article threads are provided. The package supports pdfTeX (pdfLaTeX) and
+VTeX. With VTeX it is even possible to use this package to insert
+PostScript files, in addition to PDF files.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/pdfpages
-%doc %{_texmfdistdir}/doc/latex/pdfpages
-#- source
-%doc %{_texmfdistdir}/source/latex/pdfpages
-
-#-----------------------------------------------------------------------
-%prep
-%setup -c -a1 -a2
-%autopatch -p1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
